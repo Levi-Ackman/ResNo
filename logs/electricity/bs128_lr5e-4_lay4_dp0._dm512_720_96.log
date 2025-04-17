@@ -1,0 +1,90 @@
+A total 96 CPUs are used, making sure that num_worker is small than the number of CPUs
+Args in experiment:
+Namespace(task_name='long_term_forecast', is_training=1, model_id='electricity_96_720', model='CoIn', data='custom', root_path='/data/gqyu/dataset/electricity/', data_path='electricity.csv', features='M', target='OT', freq='h', checkpoints='./checkpoints/', seq_len=96, label_len=48, pred_len=720, d_model=512, layers=4, n_heads=8, dropout=0.0, embed='timeF', channel_augmentation=True, use_norm=True, alpha=0.5, enc_in=321, dec_in=321, c_out=321, num_workers=4, itr=1, train_epochs=20, batch_size=128, patience=50, learning_rate=0.0005, des='Exp', loss='mse', lradj='type1', use_amp=False, use_gpu=True, gpu=0, gpu_idx=[0, 1, 2, 3, 4, 5, 6, 7], use_multi_gpu=False, devices='0,1')
+Use GPU: cuda:0
+Model total parameters: 6.47 M
+>>>>>>>start training : CoIn_electricity_sl96_pl720_lr0.0005_layers_4_dp0.0_nh8_dm512>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+train 17597
+val 1913
+test 4541
+Epoch: 1 Cost time: 38.7330 S | Train Loss: 0.7304 Val Loss: 0.2242 Test Loss: 0.2571
+Validation loss decreased (inf --> 0.224225).  Saving model ...
+Updating learning rate to 0.0005
+Epoch: 2 Cost time: 38.4590 S | Train Loss: 0.6201 Val Loss: 0.2128 Test Loss: 0.2421
+Validation loss decreased (0.224225 --> 0.212786).  Saving model ...
+Updating learning rate to 0.0005
+Epoch: 3 Cost time: 39.1733 S | Train Loss: 0.5945 Val Loss: 0.2064 Test Loss: 0.2283
+Validation loss decreased (0.212786 --> 0.206438).  Saving model ...
+Updating learning rate to 0.0005
+Epoch: 4 Cost time: 38.4981 S | Train Loss: 0.5729 Val Loss: 0.2029 Test Loss: 0.2202
+Validation loss decreased (0.206438 --> 0.202899).  Saving model ...
+Updating learning rate to 0.0005
+Epoch: 5 Cost time: 38.9592 S | Train Loss: 0.5564 Val Loss: 0.2055 Test Loss: 0.2133
+EarlyStopping counter: 1 out of 50
+Updating learning rate to 0.0005
+Epoch: 6 Cost time: 38.7790 S | Train Loss: 0.5406 Val Loss: 0.2008 Test Loss: 0.2127
+Validation loss decreased (0.202899 --> 0.200780).  Saving model ...
+Updating learning rate to 0.0005
+Epoch: 7 Cost time: 39.4360 S | Train Loss: 0.5287 Val Loss: 0.1938 Test Loss: 0.2093
+Validation loss decreased (0.200780 --> 0.193829).  Saving model ...
+Updating learning rate to 0.0005
+Epoch: 8 Cost time: 38.9244 S | Train Loss: 0.5211 Val Loss: 0.1983 Test Loss: 0.2094
+EarlyStopping counter: 1 out of 50
+Updating learning rate to 0.0005
+Epoch: 9 Cost time: 38.4566 S | Train Loss: 0.5130 Val Loss: 0.1941 Test Loss: 0.2068
+EarlyStopping counter: 2 out of 50
+Updating learning rate to 0.0005
+Epoch: 10 Cost time: 38.3389 S | Train Loss: 0.5062 Val Loss: 0.1949 Test Loss: 0.2067
+EarlyStopping counter: 3 out of 50
+Updating learning rate to 0.00025
+Epoch: 11 Cost time: 38.3599 S | Train Loss: 0.4957 Val Loss: 0.1874 Test Loss: 0.2025
+Validation loss decreased (0.193829 --> 0.187442).  Saving model ...
+Updating learning rate to 0.000125
+Epoch: 12 Cost time: 39.5547 S | Train Loss: 0.4889 Val Loss: 0.1878 Test Loss: 0.2030
+EarlyStopping counter: 1 out of 50
+Updating learning rate to 6.25e-05
+Epoch: 13 Cost time: 39.4688 S | Train Loss: 0.4863 Val Loss: 0.1875 Test Loss: 0.2023
+EarlyStopping counter: 2 out of 50
+Updating learning rate to 3.125e-05
+Epoch: 14 Cost time: 39.5775 S | Train Loss: 0.4844 Val Loss: 0.1868 Test Loss: 0.2018
+Validation loss decreased (0.187442 --> 0.186842).  Saving model ...
+Updating learning rate to 1.5625e-05
+Epoch: 15 Cost time: 39.0044 S | Train Loss: 0.4835 Val Loss: 0.1876 Test Loss: 0.2025
+EarlyStopping counter: 1 out of 50
+Updating learning rate to 7.8125e-06
+Epoch: 16 Cost time: 39.5046 S | Train Loss: 0.4829 Val Loss: 0.1870 Test Loss: 0.2022
+EarlyStopping counter: 2 out of 50
+Updating learning rate to 3.90625e-06
+Epoch: 17 Cost time: 38.9918 S | Train Loss: 0.4827 Val Loss: 0.1868 Test Loss: 0.2027
+Validation loss decreased (0.186842 --> 0.186755).  Saving model ...
+Updating learning rate to 1.953125e-06
+Epoch: 18 Cost time: 38.3435 S | Train Loss: 0.4825 Val Loss: 0.1869 Test Loss: 0.2025
+EarlyStopping counter: 1 out of 50
+Updating learning rate to 9.765625e-07
+Epoch: 19 Cost time: 38.2813 S | Train Loss: 0.4826 Val Loss: 0.1872 Test Loss: 0.2025
+EarlyStopping counter: 2 out of 50
+Updating learning rate to 4.8828125e-07
+Epoch: 20 Cost time: 38.3309 S | Train Loss: 0.4826 Val Loss: 0.1874 Test Loss: 0.2026
+EarlyStopping counter: 3 out of 50
+Updating learning rate to 2.44140625e-07
+>>>>>>>testing : CoIn_electricity_sl96_pl720_lr0.0005_layers_4_dp0.0_nh8_dm512<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+
+test 4541
+loading model
+test shape: (4480, 720, 321) (4480, 720, 321)
+mse:0.203, mae:0.295
+>>>>>>>visualizing of forecasting : CoIn_electricity_sl96_pl720_lr0.0005_layers_4_dp0.0_nh8_dm512<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+
+test 4541
+loading model..............
+
+>>>>>>>visualizing of weight : CoIn_electricity_sl96_pl720_lr0.0005_layers_4_dp0.0_nh8_dm512<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+
+loading model..............
+
+>>>>>>>visualization of features : CoIn_electricity_sl96_pl720_lr0.0005_layers_4_dp0.0_nh8_dm512<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+
+test 4541
+loading model..............
+

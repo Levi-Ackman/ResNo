@@ -7,10 +7,10 @@
 
 1. Install requirements. ```pip install -r requirements.txt```
 2. Download data. You can download the all datasets from iTransformer: [datasets](https://drive.google.com/u/0/uc?id=1NF7VEefXCmXuWNbnNe858WvQAkJ_7wuP&export=download). **All the datasets are well pre-processed** and can be used easily.
-3. Train the model. We provide the experiment scripts of all benchmarks under the folder `./scripts`. 
+3. Train the model. We provide the experiment scripts of all benchmarks under the folder `./MTSF`. 
 4. You can use bash commands to individually run scripts in the 'scripts' folder from the command line to obtain results for individual datasets, for example, you can use the below command line to obtain the multivariate forecasting result of  **input-96-predict-96** on ETTh1:
    
-      ```bash ./scripts/96/ETTh1.sh ```
+      ```bash ./MTSF/96or12/ETTh1.sh ```
 
 You can find:
 

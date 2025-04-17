@@ -18,9 +18,9 @@ The training history and results under './logs' folder.
 
 The test results (MSE and MAE) under './test_dicts' folder.
 
-The visualization of forecasting results under './visual' folder.
+The visualization of forecasting results under './visual/forecasting' folder.
 
-The visualization of learning  representation (Such as ***Global Token***) under './visual' folder.
+The visualization of learning  representation (Such as ***Global Token***) under './visual/feature' folder.
 
 The visualization of the weight under './visual/weight' folder.  **PS: The method used for getting the weight follows the approach outlined in [An Analysis of Linear Time Series Forecasting Models](https://arxiv.org/abs/2403.14587).**
 

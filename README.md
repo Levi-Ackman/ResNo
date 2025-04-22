@@ -1,6 +1,6 @@
 <div align="center">
   <h2><b> Code for Paper:</b></h2>
-  <h2><b> ResNo: A Channel Noise Resilient Framework for Multivariate Time Series Forecasting </b></h2>
+  <h2><b> When Attention Fails: How Do We Mitigate Channel Noise in Multivariate Time Series? </b></h2>
 </div>
 
 ## Get Started
